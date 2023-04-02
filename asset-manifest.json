@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/sultan/static/css/main.8ffc612a.css",
+    "main.js": "/sultan/static/js/main.dd232f39.js",
+    "static/media/empty.png": "/sultan/static/media/empty.348ad3869093b7f65e8c.png",
+    "static/media/thanks.png": "/sultan/static/media/thanks.30d61b6c35163632e8d0.png",
+    "static/media/404_error.png": "/sultan/static/media/404_error.e85176a2a807a2b7dde5.png",
+    "static/media/Vector_bucket_icon.svg": "/sultan/static/media/Vector_bucket_icon.994dac85d8448df9d56b.svg",
+    "index.html": "/sultan/index.html",
+    "main.8ffc612a.css.map": "/sultan/static/css/main.8ffc612a.css.map",
+    "main.dd232f39.js.map": "/sultan/static/js/main.dd232f39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ffc612a.css",
+    "static/js/main.dd232f39.js"
+  ]
+}
