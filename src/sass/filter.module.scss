@@ -1,0 +1,86 @@
+@mixin fontStyle($fw, $fsz, $lh, $ls, $c) {
+  font-weight: $fw;
+  font-size: $fsz;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $c;
+}
+.filter {
+
+  &_title {
+    margin-bottom: 10px;
+    @include fontStyle(500, 16px, 150%, none, #111111);
+  }
+  &_price{
+    margin-bottom: 16px;
+    @include fontStyle(300, 14px, 150%, none, #3F4E65);
+  }
+  &_priceInput{
+    display: flex;
+    margin-bottom: 34px;
+  }
+  &_form{
+    margin-bottom: 15px;
+  }
+  &_checkbox{
+  }
+
+}
+.priceInput{
+  &_dash{
+    margin: 0 10px 0 10px;
+  }
+  &_field{
+    width: 100px;
+    height: 23px;
+    padding: 0 1.5em;
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    border-radius: 1000px;
+  }
+}
+.form{
+  &_title{
+    @include fontStyle(500, 16px, 150%, none, #111111);
+    margin-bottom: 15px;
+  }
+  &_input{
+    width: 15.75em;
+    height: 3.7em;
+    line-height: 3em;
+    border-radius: 2.25em;
+    padding: 0 1.5em;
+    background-color: #EDEDED;
+  }
+  &_button{
+    background: #FFC85E;
+    margin-left: -3.125em;
+    width: 2.43em;
+    height: 2.43em;
+    border-radius: 50%;
+    text-transform: uppercase;
+  }
+}
+.checkbox{
+  &_input{
+    width: 192px;
+    height: 59px;
+    background: #FFC85E;
+    border-radius: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    @include fontStyle(700, 14px, 150%, none, #FFFFFF);
+    margin-top: 25px;
+  }
+  &_clean{
+    width: 59px;
+    height: 59px;
+    background-color: #FFC85E;
+    border-radius: 50%;
+    margin-top: 25px;
+  }
+  &_block{
+    display: flex;
+  }
+}

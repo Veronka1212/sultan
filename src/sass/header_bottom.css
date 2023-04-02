@@ -1,0 +1,155 @@
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 107px;
+  margin: 24px 0 24px 0;
+}
+.header2_columns {
+  display: flex;
+}
+.header2_logo {
+  width: 48.48px;
+  height: 65.92px;
+}
+.header2_contacts2 {
+  display: flex;
+}
+.header2_search {
+  display: flex;
+  margin-top: 27px;
+}
+
+.input_catalog2 {
+  display: flex;
+  width: 263px;
+  height: 59px;
+  background: #EDEDED;
+  border-radius: 36px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 10px 13px 20px;
+  gap: 10px;
+}
+
+.input_button2 {
+  background: #FFC85E;
+  border-radius: 1000px;
+  width: 39px;
+  height: 39px;
+  margin-left: -3.5em;
+  margin-top: 0.8em;
+}
+
+.contacts2_photo {
+  width: 74px;
+  height: 113px;
+}
+.contacts2_text_block {
+  margin-top: 30px;
+}
+.contacts2_phonenumber {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #3F4E65;
+}
+.contacts2_time {
+  margin: 5px 0 5px 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #3F4E65;
+}
+.contacts2_call {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #3F4E65;
+}
+
+.search_button {
+  width: 192px;
+  height: 59px;
+  background: #FFC85E;
+  border-radius: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+}
+
+.pricelist {
+  width: 192px;
+  height: 59px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 19px;
+  gap: 12px;
+  background: #FFC85E;
+  border-radius: 79px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+  margin-top: 28px;
+}
+
+.bucket {
+  display: flex;
+  margin-top: 40px;
+}
+.bucket_group {
+  display: flex;
+  margin-right: 14px;
+  margin-top: 5px;
+}
+.bucket_cost {
+  width: 22px;
+  height: 22px;
+  background: #FFC85E;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+  margin-left: -40px;
+  margin-top: -10px;
+}
+.bucket_button2 {
+  width: 40.41px;
+  height: 28.76px;
+  margin-right: 28px;
+  background-image: url("../assets/img/Vector_bucket_icon.svg");
+}
+
+.text_block_title {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #3F4E65;
+}
+
+.logo_title {
+  margin-top: 25px;
+}
+
+/*# sourceMappingURL=header_bottom.css.map */

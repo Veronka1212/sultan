@@ -1,0 +1,148 @@
+@mixin fontStyle($fw, $fsz, $lh, $ls, $c) {
+  font-weight: $fw;
+  font-size: $fsz;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $c;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 107px;
+  margin: 24px 0 24px 0;
+
+  &_columns {
+    display: flex;
+  }
+
+  &_logo {
+    width: 48.48px;
+    height: 65.92px;
+  }
+
+  &_contacts2 {
+    display: flex;
+  }
+
+  &_search {
+    display: flex;
+    margin-top: 27px;
+  }
+}
+
+.input_catalog2 {
+  display: flex;
+  width: 263px;
+  height: 59px;
+  background: #EDEDED;
+  border-radius: 36px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 10px 13px 20px;
+  gap: 10px;
+}
+
+.input_button2 {
+  background: #FFC85E;
+  border-radius: 1000px;
+  width: 39px;
+  height: 39px;
+
+  margin-left: -3.5em;
+  margin-top: 0.8em;
+
+}
+
+.contacts2 {
+  &_photo {
+    width: 74px;
+    height: 113px;
+  }
+
+  &_text_block {
+    margin-top: 30px;
+  }
+
+  &_phonenumber {
+    @include fontStyle(600, 14px, 150%, none, #3F4E65);
+  }
+
+  &_time {
+    margin: 5px 0 5px 0;
+    @include fontStyle(300, 12px, 150%, none, #3F4E65);
+  }
+
+  &_call {
+    @include fontStyle(400, 10px, 150%, none, #3F4E65);
+  }
+}
+
+.search {
+  &_button {
+    width: 192px;
+    height: 59px;
+    background: #FFC85E;
+    border-radius: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    @include fontStyle(700, 14px, 150%, none, #FFFFFF);
+  }
+}
+
+.pricelist {
+  width: 192px;
+  height: 59px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 19px;
+  gap: 12px;
+  background: #FFC85E;
+  border-radius: 79px;
+  @include fontStyle(700, 14px, 150%, none, #FFFFFF);
+  margin-top: 28px;
+}
+
+.bucket {
+  &_group{
+    display: flex;
+    margin-right: 14px;
+    margin-top: 5px;
+  }
+  display: flex;
+  margin-top: 40px;
+  &_cost{
+    width: 22px;
+    height: 22px;
+    background: #FFC85E;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include fontStyle(700, 14px, 150%, none, #FFFFFF);
+    margin-left: -40px;
+    margin-top: -10px;
+  }
+
+  &_button2 {
+    width: 40.41px;
+    height: 28.76px;
+    margin-right: 28px;
+    background-image: url('../assets/img/Vector_bucket_icon.svg');
+  }
+}
+
+.text_block_title {
+  @include fontStyle(300, 12px, 150%, none, #3F4E65);
+}
+
+.logo_title {
+  margin-top: 25px;
+}

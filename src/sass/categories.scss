@@ -1,0 +1,35 @@
+@mixin fontStyle($fw, $fsz, $lh, $ls, $c) {
+  font-weight: $fw;
+  font-size: $fsz;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $c;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.75em;
+  margin-bottom: 3.125em;
+  @include fontStyle(400, 13px, 17px, none, #3F4E65);
+
+  &_itemC {
+    padding: 1.125em 1.4375em 1.125em 1.4375em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 6.25em;
+    height: 4.375em;
+    background: #FFFFFF;
+    box-shadow: 0 15px 70px -11px rgba(43, 28, 1, 0.04);
+    border-radius: 10px;
+  }
+
+  &_itemC:not(:last-child) {
+    margin: 0 0.6875em 0 0;
+  }
+}
+.classActive{
+  background: rgba(188, 166, 122, 0.2);
+}

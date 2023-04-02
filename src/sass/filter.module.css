@@ -1,0 +1,87 @@
+.filter_title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #111111;
+}
+.filter_price {
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #3F4E65;
+}
+.filter_priceInput {
+  display: flex;
+  margin-bottom: 34px;
+}
+.filter_form {
+  margin-bottom: 15px;
+}
+.priceInput_dash {
+  margin: 0 10px 0 10px;
+}
+.priceInput_field {
+  width: 100px;
+  height: 23px;
+  padding: 0 1.5em;
+  background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+  border-radius: 1000px;
+}
+
+.form_title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #111111;
+  margin-bottom: 15px;
+}
+.form_input {
+  width: 15.75em;
+  height: 3.7em;
+  line-height: 3em;
+  border-radius: 2.25em;
+  padding: 0 1.5em;
+  background-color: #EDEDED;
+}
+.form_button {
+  background: #FFC85E;
+  margin-left: -3.125em;
+  width: 2.43em;
+  height: 2.43em;
+  border-radius: 50%;
+  text-transform: uppercase;
+}
+
+.checkbox_input {
+  width: 192px;
+  height: 59px;
+  background: #FFC85E;
+  border-radius: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+  margin-top: 25px;
+}
+.checkbox_clean {
+  width: 59px;
+  height: 59px;
+  background-color: #FFC85E;
+  border-radius: 50%;
+  margin-top: 25px;
+}
+.checkbox_block {
+  display: flex;
+}
+
+/*# sourceMappingURL=filter.module.css.map */

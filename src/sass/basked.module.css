@@ -1,0 +1,32 @@
+.basked_title {
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #111111;
+  text-align: left;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.basked_button {
+  width: 192px;
+  height: 59px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 19px;
+  gap: 12px;
+  background: #FFC85E;
+  border-radius: 79px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+  margin-top: 28px;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=basked.module.css.map */

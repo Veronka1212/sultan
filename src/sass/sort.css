@@ -1,0 +1,22 @@
+.sort {
+  display: flex;
+  justify-content: right;
+}
+.sort_select {
+  display: flex;
+}
+.sort_prod {
+  width: 75px;
+  height: 24px;
+}
+
+.select_name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #111111;
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=sort.css.map */
