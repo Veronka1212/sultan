@@ -1,0 +1,121 @@
+@mixin fontStyle($fw, $fsz, $lh, $ls, $c) {
+  font-weight: $fw;
+  font-size: $fsz;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $c;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 5px;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+
+  &_name {
+    @include fontStyle(700, 30px, 36px, none, #3F4E65);
+  }
+
+  &_description {
+    @include fontStyle(300, 12px, 18px, none, #3F4E65);
+  }
+
+  &_column {
+  }
+
+  &_weight {
+    display: flex;
+  }
+}
+
+.weight {
+  &_icon {
+    margin-right: 8px;
+  }
+
+  &_value {
+    @include fontStyle(400, 12px, 130%, none, #3F4E65);
+  }
+}
+
+.column {
+  &_action {
+    display: flex;
+    align-items: center;
+  }
+  &_action:not(:last-child) {
+    margin-right: 44px;
+  }
+  &_image {
+    height: 191px;
+    width: auto;
+    margin-right: 21px;
+  }
+
+  &_about:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
+
+  &_about {
+    max-width: 444px;
+  }
+}
+
+.action {
+  &_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 44px;
+    gap: 10px;
+  }
+
+  &_line {}
+  &_price {
+    margin: 0 44px 0 44px;
+    @include fontStyle(700, 30px, 130%, none, #3F4E65);
+  }
+  &_delete {
+    width: 59px;
+    height: 59px;
+    background: #FFC85E;
+    border-radius: 79px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 42px;
+  }
+}
+
+.buttons {
+  &_add {
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    border-radius: 1000px;
+    width: 34px;
+    height: 23px;
+  }
+  &_amount {}
+  &_del {
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    border-radius: 1000px;
+    width: 34px;
+    height: 23px;
+  }
+}
+.order_button{
+  width: 192px;
+  height: 59px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 19px;
+  gap: 12px;
+  background: #FFC85E;
+  border-radius: 79px;
+  @include fontStyle(700, 14px, 150%, none, #FFFFFF);
+  margin-top: 28px;
+  margin-bottom: 20px;
+}

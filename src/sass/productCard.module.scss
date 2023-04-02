@@ -1,0 +1,145 @@
+@mixin fontStyle($fw, $fsz, $lh, $ls, $c) {
+  font-weight: $fw;
+  font-size: $fsz;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $c;
+}
+@mixin backgroundStyle(){
+  box-shadow: 0 15px 70px -11px rgba(43, 28, 1, 0.04);
+  border-radius: 10px;
+  background: #FFFFFF;
+}
+.product{
+  display: flex;
+  align-items: center;
+  margin-top: 65px;
+  margin-bottom: 60px;
+  &_column{}
+  &_instock{
+    @include fontStyle(500, 14px, 130%, none, #1FD85D);
+    margin-bottom: 10px;
+  }
+}
+.navigation{
+  display: flex;
+  margin-bottom: 65px;
+  margin-top: 45px;
+  &_item{
+    margin-right: 10px;
+    @include fontStyle(300, 14px, 16px, none, #3F4E65);
+  }
+}
+
+.column{
+  &_image{
+    margin-right: 40px;
+  }
+  &_about{}
+  &_name{
+    @include fontStyle(400, 30px, 45px, none, #3F4E65);
+  }
+  &_weight{
+    display: flex;
+    margin: 11px 0 0 0;
+  }
+  &_action{
+    display: flex;
+    align-items: center;
+  }
+  &_share{
+    display: flex;
+    margin-bottom: 35px;
+  }
+  &_shot_info{
+    @include fontStyle(300, 14px, 21px, none, #3F4E65);
+    margin-bottom: 30px;
+  }
+  &_description{}
+  &_line{
+    margin: 20px 0 20px 0;
+  }
+  &_long_info{
+    @include fontStyle(300, 14px, 21px, none, #3F4E65);
+  }
+  &_long_info:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+.weight{
+  &_icon{
+    margin-right: 8px;
+  }
+  &_value{}
+}
+.action{
+  &_price{
+    @include fontStyle(700, 30px, 130%, none, #3F4E65);
+  }
+  &_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 44px;
+    gap: 10px;
+  }
+  &_basked{
+    width: 192px;
+    height: 59px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 19px;
+    gap: 12px;
+    background: #FFC85E;
+    border-radius: 79px;
+    @include fontStyle(700, 14px, 150%, none, #FFFFFF);
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+}
+.share{
+  &_button{
+    width: 77px;
+    height: 77px;
+    @include backgroundStyle;
+  }
+  &_text{
+    width: 316px;
+    height: 77px;
+    padding: 20px 35px;
+    text-align: center;
+    @include fontStyle(400, 12px, 150%, none, #3F4E65);
+    @include backgroundStyle;
+    margin: 0 10px 0 10px;
+  }
+  &_pricelist{
+    width: 186px;
+    height: 77px;
+    @include backgroundStyle;
+  }
+}
+.buttons{
+  &_del{
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    border-radius: 1000px;
+    width: 34px;
+    height: 23px;
+  }
+  &_amount{}
+  &_add{
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    border-radius: 1000px;
+    width: 34px;
+    height: 23px;
+  }
+}
+.description{
+  &_title{
+    @include fontStyle(500, 16px, 150%, none, #111111);
+  }
+  &_text{
+    @include fontStyle(300, 12px, 150%, none, #111111);
+  }
+}

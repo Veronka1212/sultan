@@ -1,0 +1,21 @@
+.categories {
+  margin-top: 20px;
+}
+.categories h1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #3F4E65;
+  margin-bottom: 15px;
+}
+.categories_item {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #3F4E65;
+}
+
+/*# sourceMappingURL=categoriesLeft.module.css.map */

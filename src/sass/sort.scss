@@ -1,0 +1,27 @@
+@mixin fontStyle($fw, $fsz, $lh, $ls, $c) {
+  font-weight: $fw;
+  font-size: $fsz;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $c;
+}
+
+.sort {
+  display: flex;
+  justify-content: right;
+
+  &_select {
+    display: flex;
+  }
+
+  &_prod {
+    width: 75px;
+    height: 24px;
+  }
+}
+.select{
+  &_name {
+    @include fontStyle(600, 16px, 150%, none, #111111);
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,88 @@
+@mixin fontStyle($fw, $fsz, $lh, $ls, $c) {
+  font-weight: $fw;
+  font-size: $fsz;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $c;
+}
+
+.product{
+  margin: 21px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 42px 21px 29px 23px;
+  width: 326px;
+  height: 530px;
+  background: #FFFFFF;
+  box-shadow: 0 14px 39px -11px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+
+  &_weight {
+    display: flex;
+  }
+
+  &_purchase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_info {
+    @include fontStyle(300, 14px, 150%, none, #3F4E65);
+  }
+
+  &_info:not(:last-child) {
+    margin: 0 0 5px 0;
+  }
+}
+
+.name {
+  margin: 10px 0 20px 0;
+}
+
+.purchase {
+  &_bucket_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 19px;
+    gap: 5px;
+    width: 153px;
+    height: 45px;
+    background: #FFC85E;
+    border-radius: 80px;
+    @include fontStyle(700, 10px, 12px, 0.15em, #FFFFFF);
+  }
+  &_count{
+    width: 22px;
+    height: 22px;
+    background: #FFFFFF;
+    border: 1px solid #FFC85E;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include fontStyle(700, 14px, 150%, none, #FFC85E);
+    margin-left: -80px;
+    margin-top: -20px;
+  }
+}
+
+.weight {
+  &_icon {
+    margin-right: 8px;
+  }
+}
+
+.image {
+  &_picture {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

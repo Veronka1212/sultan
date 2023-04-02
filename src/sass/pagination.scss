@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  li {
+    display: inline-block;
+
+    a {
+      text-align: center;
+      width: 35px;
+      line-height: 34px;
+      height: 35px;
+     // border: 1px solid #FFC85E;
+      border-radius: 30px;
+      margin-right: 10px;
+      cursor: pointer;
+      display: inline-block;
+      color: #FFC85E;
+
+      &:hover {
+        background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+        color: #fff;
+      }
+    }
+  }
+
+  :global {
+    .selected {
+      a {
+        background-color: #FFC85E;
+        color: #fff;
+      }
+    }
+  }
+}

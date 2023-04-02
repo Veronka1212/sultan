@@ -1,0 +1,3 @@
+interface ILoad {
+    items: Product[];
+}

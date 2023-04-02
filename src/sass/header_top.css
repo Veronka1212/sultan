@@ -1,0 +1,82 @@
+.main_h {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 61px;
+}
+.header_addressBlock {
+  display: flex;
+}
+.header_location {
+  width: 13px;
+  height: 16px;
+}
+.header_location2 {
+  width: 5px;
+  height: 5px;
+}
+.header_column {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: none;
+  color: #3F4E65;
+}
+.header_column:not(:last-child) {
+  margin: 0 75px 0 0;
+}
+.header_text {
+  font-weight: 600;
+}
+.header_categories {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 0;
+  margin: 15px 0 0 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #3F4E65;
+}
+.header_iteam:not(:last-child) {
+  margin: 0 60px 0 0;
+}
+
+.contacts_email_h {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #111111;
+}
+.contacts_text_h {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #3F4E65;
+}
+
+.header_part {
+  display: flex;
+}
+
+.left {
+  margin: 15px 0 0 0;
+}
+
+.addressBlock_icon {
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+.icon_location2 {
+  margin: 4px 0 1px -11.5px;
+}
+
+/*# sourceMappingURL=header_top.css.map */
