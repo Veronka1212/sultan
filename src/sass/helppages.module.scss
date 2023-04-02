@@ -1,0 +1,40 @@
+@mixin fontStyle($fw, $fsz, $lh, $ls, $c) {
+  font-weight: $fw;
+  font-size: $fsz;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $c;
+}
+
+.main {
+  display: block;
+  padding: 30px;
+  &_block {}
+
+}
+
+.block {
+  &_text {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 1em;
+  }
+}
+
+.button {
+  width: 192px;
+  height: 59px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 19px;
+  gap: 12px;
+  background: #FFC85E;
+  border-radius: 79px;
+  @include fontStyle(700, 14px, 150%, none, #FFFFFF);
+  margin-top: 28px;
+}
+.image{
+  object-fit: contain;
+}

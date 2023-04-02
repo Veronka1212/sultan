@@ -1,0 +1,202 @@
+.main {
+  background: #3F4E65;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+  padding-top: 71px;
+}
+.footer_column {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.footer_column:not(:last-child) {
+  margin: 0 95px 0 0;
+}
+
+.menu_item:not(:last-child), .categories_item:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+.menu_item span, .categories_item span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+}
+
+.main_column {
+  max-width: 320px;
+  margin: 0 59px 0 0;
+}
+
+.form {
+  position: relative;
+  margin: 1em;
+  display: block;
+}
+
+.input_email {
+  width: 15.75em;
+  height: 3.7em;
+  line-height: 3em;
+  border-radius: 2.25em;
+  padding: 0 1.5em;
+}
+
+.input_button {
+  background: #FFC85E;
+  margin-left: -3.125em;
+  width: 2.43em;
+  height: 2.43em;
+  border-radius: 50%;
+  text-transform: uppercase;
+}
+
+.input_email::placeholder {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.img_icon {
+  width: 48.48px;
+  height: 65.92px;
+  display: block;
+}
+
+.messengers {
+  display: flex;
+}
+.messengers_title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.messengers_viber {
+  background-color: #00E676;
+  width: 2.43em;
+  height: 2.43em;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
+.messengers_telegram {
+  background-color: #40B3E0;
+  width: 2.43em;
+  height: 2.43em;
+  border-radius: 50%;
+}
+
+.logo {
+  display: flex;
+  margin: 0 0 15px 0;
+}
+.logo_img_icon {
+  margin: 0 7.2px 0 0;
+}
+.logo_name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: none;
+  color: #3F4E65;
+  padding-top: 1.7em;
+}
+
+.contacts_title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: none;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+.contacts_phonenumber {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+}
+.contacts_time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+}
+.contacts_cards {
+  display: flex;
+}
+.contacts_call {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: none;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+.contacts_email {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+}
+.contacts_text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.cards_viza {
+  width: 61px;
+  height: 39px;
+  border-radius: 3px;
+  background-color: #00579F;
+  margin: 0 5px 0 0;
+}
+.cards_master {
+  width: 61px;
+  height: 39px;
+  border-radius: 3px;
+  background-color: #0F3560;
+}
+
+.download {
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+}
+.download_link {
+  width: 192px;
+  height: 59px;
+  background: #FFC85E;
+  border-radius: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=footer.css.map */
