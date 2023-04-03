@@ -22,7 +22,7 @@ const HeaderBottom: React.FC = () => {
 
     return (
         <div className="header2">
-            <Link to="/">
+            <Link to="/sultan">
                 <div className="header2_columns logo_title">
                     <img className="header2_logo" src={logo} alt=""/>
                     <div className="header2_logoname">

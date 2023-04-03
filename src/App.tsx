@@ -27,7 +27,7 @@ function App() {
             </div>
             <DividingLine/>
             <Routes>
-                <Route path="/" element={<Home/>}/>
+                <Route path="/sultan" element={<Home/>}/>
                 <Route path="*" element={<NotFound/>}/>
                 <Route path="/basked" element={<Basked/>}/>
                 <Route path="/thanks" element={<Thanks/>}/>

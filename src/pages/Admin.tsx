@@ -25,7 +25,6 @@ const Admin: React.FC = () => {
 
     }
 
-
     return (
         <div className="wrapper _container">
             <Link to="/add">
