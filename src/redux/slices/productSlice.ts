@@ -1,13 +1,12 @@
 import {createSlice} from "@reduxjs/toolkit";
+import getProductFromLocalStorage from "../utils/getProductFromLocalStorage";
+import getTotalPriceFromLocalStorage from "../utils/getTotalPriceFromLocalStorage";
 
-interface CartSliceState {
-    products: Product[];
-    totalPrice: number;
-}
+const {products,totalPrice} = getProductFromLocalStorage();
 
-const initialState: CartSliceState = {
-    products: [],
-    totalPrice: 0,
+const initialState: ICard = {
+    products: products,
+    totalPrice: totalPrice,
 }
 
 const productSlice = createSlice({
@@ -21,9 +20,7 @@ const productSlice = createSlice({
             } else {
                 state.products.push({...action.payload, count: 1});
             }
-            state.totalPrice = state.products.reduce((sum, pr) => {
-                return (pr.price * pr.count) + sum;
-            }, 0);
+            state.totalPrice = getTotalPriceFromLocalStorage(state.products);
         },
         removeProduct(state, action) {
             const findProduct = state.products.find(obj => obj.id === action.payload);
@@ -34,9 +31,7 @@ const productSlice = createSlice({
                     state.products = state.products.filter(obj => obj.id !== action.payload);
                 }
             }
-            state.totalPrice = state.products.reduce((sum, pr) => {
-                return (pr.price * pr.count) + sum;
-            }, 0);
+            state.totalPrice = getTotalPriceFromLocalStorage(state.products);
         },
         removeProductFromBasked(state, action) {
             state.products = state.products.filter(obj => obj.id !== action.payload);

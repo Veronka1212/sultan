@@ -11,14 +11,23 @@ import photo from "../assets/img/pngwing_3.png";
 import price from "../assets/img/Vectorprice.png";
 import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import {RootState} from "../redux/store";
 
 const HeaderBottom: React.FC = () => {
 
     const {products, totalPrice} = useSelector((state:RootState) => state.productReducer);
-
     const totalCount: number = products.reduce((sum: number, pr: Product) => sum + pr.count, 0);
+    const isMounted = useRef(false);
+
+
+    useEffect(()=> {
+        if (isMounted.current) {
+            const json = JSON.stringify(products);
+            localStorage.setItem('product', json)
+        }
+        isMounted.current = true;
+    },[products])
 
     return (
         <div className="header2">
