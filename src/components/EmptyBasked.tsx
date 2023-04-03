@@ -11,7 +11,7 @@ const EmptyBasked: React.FC = () => {
                     <div className={style.block}>
                         <h1 className={style.block_text}>Ваша корзина пуста!</h1>
                         <img className={style.image} src={empty} alt=""/>
-                        <Link to="/">
+                        <Link to="/sultan">
                             <button className={style.button}>Назад</button>
                         </Link>
                     </div>

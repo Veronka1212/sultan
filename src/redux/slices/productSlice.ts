@@ -34,7 +34,9 @@ const productSlice = createSlice({
             state.totalPrice = getTotalPriceFromLocalStorage(state.products);
         },
         removeProductFromBasked(state, action) {
-            state.products = state.products.filter(obj => obj.id !== action.payload);
+            const products = state.products.filter(obj => obj.id !== action.payload);
+            state.products = products;
+            state.totalPrice = getTotalPriceFromLocalStorage(products);
         },
         clearProducts(state) {
             state.products = state.products = [];
