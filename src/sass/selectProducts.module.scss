@@ -47,9 +47,11 @@
     display: flex;
     align-items: center;
   }
+
   &_action:not(:last-child) {
     margin-right: 44px;
   }
+
   &_image {
     height: 191px;
     width: auto;
@@ -66,7 +68,7 @@
 }
 
 .action {
-  &_buttons{
+  &_buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,11 +76,14 @@
     gap: 10px;
   }
 
-  &_line {}
+  &_line {
+  }
+
   &_price {
-    margin: 0 44px 0 44px;
+    margin: 0 44px;
     @include fontStyle(700, 30px, 130%, none, #3F4E65);
   }
+
   &_delete {
     width: 59px;
     height: 59px;
@@ -97,7 +102,10 @@
     width: 34px;
     height: 23px;
   }
-  &_amount {}
+
+  &_amount {
+  }
+
   &_del {
     background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
     border-radius: 1000px;
@@ -105,7 +113,8 @@
     height: 23px;
   }
 }
-.order_button{
+
+.order_button {
   width: 192px;
   height: 59px;
   display: flex;
@@ -120,10 +129,23 @@
   margin-top: 28px;
   margin-bottom: 20px;
 }
+
 @media (max-width: 992px) {
-.product{
-  &_column{
-    margin-bottom: 10px;
+  .product {
+    &_column {
+      margin-bottom: 10px;
+    }
   }
-}
+  .action {
+    &_buttons {
+      padding: 17px 80px;
+      gap: 10px;
+    }
+    &_price{
+      margin: 0 80px;
+    }
+    &_delete{
+      margin-left: 72px;
+    }
+  }
 }
