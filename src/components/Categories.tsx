@@ -1,7 +1,6 @@
 import '../sass/categories.scss';
 import React from "react";
 
-
 const Categories: React.FC<Category> = ({value, onClickCategory}) => {
 
     const categories: string[] = ['Уход за телом', 'Уход за лицом', 'Уход за руками', 'Уход за ногами', 'Уход за волосами', 'Средства для загара',

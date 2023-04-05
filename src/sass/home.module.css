@@ -3,6 +3,7 @@
 }
 .body_products {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=home.module.css.map */

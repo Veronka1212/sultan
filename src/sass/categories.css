@@ -1,6 +1,5 @@
 .categories {
   display: flex;
-  flex-direction: row;
   margin-top: 1.75em;
   margin-bottom: 3.125em;
   font-weight: 400;
@@ -15,6 +14,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 140px;
   min-width: 6.25em;
   height: 4.375em;
   background: #FFFFFF;
@@ -27,6 +27,12 @@
 
 .classActive {
   background: rgba(188, 166, 122, 0.2);
+}
+
+@media (max-width: 992px) {
+  .categories {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=categories.css.map */
