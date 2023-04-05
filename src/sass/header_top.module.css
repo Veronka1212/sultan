@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 61px;
+  align-items: center;
+}
+.columnRight_actions {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #3F4E65;
+}
+
+.actions_item:not(:last-child) {
+  margin: 0 60px 0 0;
+}
+
+.columnLeft {
+  display: flex;
+}
+.columnLeft_item {
+  display: flex;
+  align-items: center;
+}
+.columnLeft_item:not(:last-child) {
+  margin: 0 41px 0 0;
+}
+
+.item_icon {
+  margin-right: 17px;
+}
+.item_text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: none;
+  color: #3F4E65;
+}
+
+.icon_2 {
+  margin: 4px 0 1px -11.5px;
+}
+@media (max-width: 992px) {
+  .header {
+    height: 100px;
+  }
+}
+
+/*# sourceMappingURL=header_top.module.css.map */
