@@ -5,7 +5,7 @@
 .footer {
   display: flex;
   flex-wrap: wrap;
-  padding: 71px 0;
+  padding: 71px 10px;
 }
 .footer_column {
   font-weight: 400;
