@@ -10,7 +10,7 @@ const Thanks = () => {
                     <div className={style.block}>
                         <h1 className={style.block_text}>Спасибо за заказ!</h1>
                         <img className={style.image} src={thanks} alt=""/>
-                        <Link to="/">
+                        <Link to="/sultan">
                             <button className={style.button}>На главную</button>
                         </Link>
                     </div>

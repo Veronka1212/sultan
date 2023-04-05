@@ -13,8 +13,7 @@
 .footer {
   display: flex;
   flex-wrap: wrap;
-  min-height: 500px;
-  padding-top: 71px;
+  padding: 71px 0;
 
   &_column {
     @include fontStyle(400, 14px, 150%, none, #FFFFFF);
