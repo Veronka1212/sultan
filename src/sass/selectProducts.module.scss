@@ -46,6 +46,7 @@
   &_action {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   &_action:not(:last-child) {
@@ -138,11 +139,11 @@
   }
   .action {
     &_buttons {
-      padding: 17px 80px;
+      padding: 17px 65px;
       gap: 10px;
     }
     &_price{
-      margin: 0 80px;
+      margin: 0 70px;
     }
     &_delete{
       margin-left: 72px;
