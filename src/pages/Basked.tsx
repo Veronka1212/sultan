@@ -22,7 +22,6 @@ export const Basked: React.FC = () => {
     }
 
     return (
-        <div className="wrapper">
             <div className="basked _container">
                 <h1 className={style.basked_title}>КОРЗИНА</h1>
                 {
@@ -31,7 +30,7 @@ export const Basked: React.FC = () => {
                 <Link to="/thanks">
                     <button className={style.basked_button} onClick={onClickClear}>Оформить заказ</button>
                 </Link>
-            </div>
+
         </div>
     )
 }

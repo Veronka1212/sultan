@@ -9,6 +9,7 @@
 .product {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 50px 5px;
   width: 100%;
@@ -118,4 +119,11 @@
   @include fontStyle(700, 14px, 150%, none, #FFFFFF);
   margin-top: 28px;
   margin-bottom: 20px;
+}
+@media (max-width: 992px) {
+.product{
+  &_column{
+    margin-bottom: 10px;
+  }
+}
 }
