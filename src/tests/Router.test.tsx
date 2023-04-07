@@ -11,7 +11,6 @@ import ProductBlock from "../components/ProductBlock";
 import {renderWithRouter} from "./helpers/renderWithRouter";
 
 jest.mock('axios');
-jest.mock('react-redux');
 
 describe('Test router', () => {
     let response: Response;
@@ -52,5 +51,9 @@ describe('Test router', () => {
         expect(users.length).toBe(1);
         userEvent.click(users[0])
         expect(screen.getByTestId('product-card')).toBeInTheDocument();
+    });
+
+    it('should filtering products', function () {
+
     });
 })

@@ -46,14 +46,14 @@ export const SelectedProducts: React.FC<Product> = ({id, url, name, size_type, s
                     <div className={style.column_action}>
                         <img className={style.action_line} src={line} alt=""/>
                         <div className={style.action_buttons}>
-                            <button className={style.buttons_del} onClick={onClickRemove}>-</button>
+                            <button className={style.buttons_del} data-testid="product-add" onClick={onClickRemove}>-</button>
                             <div className={style.buttons_amount}>{count}</div>
-                            <button className={style.buttons_add} onClick={onClickAdd}>+</button>
+                            <button className={style.buttons_add} data-testid="product-delete" onClick={onClickAdd}>+</button>
                         </div>
                         <img className={style.action_line} src={line} alt=""/>
                         <div className={style.action_price}>{price} ₸</div>
                         <img className={style.action_line} src={line} alt=""/>
-                        <button className={style.action_delete} onClick={onClickDeleteFromBasket}><img src={del_icon} alt=""/></button>
+                        <button className={style.action_delete} data-testid="product-delete-from-basked" onClick={onClickDeleteFromBasket}><img src={del_icon} alt=""/></button>
                     </div>
                 </div>
             </div>
