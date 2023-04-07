@@ -39,7 +39,7 @@ const productSlice = createSlice({
             state.totalPrice = getTotalPriceFromLocalStorage(products);
         },
         clearProducts(state) {
-            state.products = state.products = [];
+            state.products = [];
             state.totalPrice = 0;
         }
     }

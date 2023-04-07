@@ -52,8 +52,4 @@ describe('Test router', () => {
         userEvent.click(users[0])
         expect(screen.getByTestId('product-card')).toBeInTheDocument();
     });
-
-    it('should filtering products', function () {
-
-    });
 })
