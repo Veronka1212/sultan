@@ -11,6 +11,7 @@ const Categories: React.FC<Category> = ({value, onClickCategory}) => {
             {
                 categories.map((categoryName: string, i: number) => (
                         <div onClick={() => onClickCategory(i)}
+                             data-testid="select-category"
                              className={value === i ? "categories_itemC classActive" : "categories_itemC"}
                              key={i}>{categoryName}</div>
                     )

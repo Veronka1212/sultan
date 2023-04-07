@@ -3,19 +3,22 @@ import '@testing-library/jest-dom/extend-expect';
 import {MemoryRouter} from "react-router-dom";
 import * as hooks from 'react-redux';
 import SelectedProducts from "../components/SelectedProducts";
-import * as actions from '../redux/slices/productSlice';
+import * as productActions from '../redux/slices/productSlice';
+import * as filterActions from '../redux/slices/filterSlice';
+import Mock = jest.Mock;
+import Categories from "../components/Categories";
 
 jest.mock('react-redux');
 
-const mockedDispatch = jest.spyOn(hooks,'useDispatch');
+const mockedDispatch = jest.spyOn(hooks, 'useDispatch');
 describe('Test dispatchers', () => {
     it('test select products dispatch', async () => {
-        const dispatch = jest.fn();
+        const dispatch: Mock = jest.fn();
         mockedDispatch.mockReturnValue(dispatch);
 
-        const removeProductFromBasked = jest.spyOn(actions,'removeProductFromBasked');
-        const addProduct = jest.spyOn(actions,'addProduct');
-        const removeProduct = jest.spyOn(actions,'removeProduct');
+        const removeProductFromBasked = jest.spyOn(productActions, 'removeProductFromBasked');
+        const addProduct = jest.spyOn(productActions, 'addProduct');
+        const removeProduct = jest.spyOn(productActions, 'removeProduct');
 
         render(<MemoryRouter><SelectedProducts id="0"
                                                url="https://mila.by/images/cache/_thumb_500x500xin_upload_iblock_9ba_8001841474953-1.webp"
@@ -41,5 +44,17 @@ describe('Test dispatchers', () => {
 
         expect(dispatch).toHaveBeenCalled();
         expect(removeProduct).toHaveBeenCalledWith("0");
+    });
+
+    it('test select categories', () => {
+
+        const setCategory = jest.spyOn(filterActions, 'setCategory');
+        render(<MemoryRouter>
+            <Categories value={0} onClickCategory={setCategory}/>
+        </MemoryRouter>)
+
+        fireEvent.click(screen.getAllByTestId('select-category')[0]);
+        expect(setCategory).toHaveBeenCalledWith(0);
+
     });
 })
