@@ -35,8 +35,8 @@ const ProductBlock: React.FC<Product> = ({id, url, name, size_type, size, barcod
     }
 
     return (
-        <div className="product">
-            <Link to={`/card/${id}`}>
+        <div className="product" data-testid="product-block">
+            <Link to={`/card/${id}`} data-testid="product-card">
                 <div className="product_column">
                     <div className="product_image">
                         <img className="image_picture" src={url} alt=""/>

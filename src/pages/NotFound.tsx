@@ -3,7 +3,7 @@ import error from '../assets/img/404_error.png';
 
 const NotFound = () => {
     return (
-        <div className="wrapper">
+        <div className="wrapper" data-testid="not-found">
             <div className="_container">
                 <div className={style.main}>
                     <div className={style.block}>
