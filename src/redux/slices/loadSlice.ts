@@ -7,11 +7,11 @@ export const fetchProducts = createAsyncThunk<Product[], IFilter>(
         const {sort, category, currentPage} = params;
         const response =
             await axios.get<Product[]>('https://641db24c945125fff3d3c0b1.mockapi.io/item?page='
-            + currentPage + '&limit=3&prescription='
-            + category + sort.property);
+                + currentPage + '&limit=3&prescription='
+                + category + sort.property);
         return response.data;
     }
-)
+);
 
 const initialState: ILoad = {
     items: []
@@ -34,5 +34,4 @@ const loadSlice = createSlice({
 })
 
 export const {getProducts} = loadSlice.actions;
-
 export default loadSlice.reducer;

@@ -30,12 +30,14 @@ describe('productSlice', () => {
         totalPrice: 0,
     }
     it('should add product', () => {
-        const action = {payload: {
+        const action = {
+            payload: {
                 "id": "3", "url": "", "name": "", "size_type": "", "size": 0, "barcode": 0,
                 "manufacturer": "", "brand": "", "description": "", "price": 0, "count": 1
-            }, type: addProduct.type}
+            }, type: addProduct.type
+        }
         const result: ICard = productReducer(arrayProducts, action);
-        expect(result.products).toEqual( [
+        expect(result.products).toEqual([
             {
                 "id": "0", "url": "", "name": "", "size_type": "", "size": 0, "barcode": 0,
                 "manufacturer": "", "brand": "", "description": "", "price": 0, "count": 1
@@ -58,7 +60,7 @@ describe('productSlice', () => {
     it('should delete product from basked', () => {
         const action = {payload: "2", type: removeProduct.type}
         const result: ICard = productReducer(arrayProducts, action);
-        expect(result.products).toEqual( [
+        expect(result.products).toEqual([
             {
                 "id": "0", "url": "", "name": "", "size_type": "", "size": 0, "barcode": 0,
                 "manufacturer": "", "brand": "", "description": "", "price": 0, "count": 1
@@ -124,5 +126,5 @@ describe('filterSlice', () => {
         const action = {payload: "a", type: filterArrayManufactures.type}
         const result: IFilter = filterReducer(filter, action);
         expect(result.arrayManufacture).toEqual(["b", "c"]);
-    });
+    })
 });

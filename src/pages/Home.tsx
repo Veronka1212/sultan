@@ -72,7 +72,7 @@ export const Home = () => {
                             filterProducts.filter(p => p.price > minPrice && p.price < maxPrice)
                                 .map(
                                     (product) => (
-                                        <ProductBlock key={product.id} {...product}/>
+                                        <ProductBlock key={product.id} {...product} data-testid="product"/>
                                     )
                                 )
                         }
